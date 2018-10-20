@@ -1,0 +1,208 @@
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+    :global {
+        .iconfont {
+            margin-right: 20px;
+            font-size: 40px;
+        }
+    }
+    .header {
+        padding: 40px 30px;
+        background: #2c2c32;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .left {
+            // margin-left: 6vw;
+            flex: 1;
+            text-align: center;
+            .user-img {
+                border-radius: 50%;
+                height: 120px;
+                width: 120px;
+            }
+            .user-info {
+                font-size: 30px;
+                font-weight: 600;
+                color: #fff;
+            }
+        }
+        .sign {
+            width: 150px;
+            height: 46px;
+            font-size: 20px;
+            border-radius: 23px;
+            text-align: center;
+            line-height: 46px;
+            color: #2c2c32;
+            background: #fff;
+            margin-right: 6vw;
+        }
+        .hasSigned {
+            width: 150px;
+            height: 46px;
+            font-size: 20px;
+            border-radius: 23px;
+            text-align: center;
+            line-height: 46px;
+            color: #989898;
+            background: #f1f1f1;
+            margin-right: 6vw;
+        }
+    }
+    ul {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        background: #fff;
+        li {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 30px;
+            border-bottom: 1px solid #f1f1f1;
+            align-items: center;
+            color: #333;
+            div:first-child {
+                font-size: 28px;
+                line-height: 40px;
+                span {
+                    font-size: 40px;
+                }
+            }
+            div:last-child {
+                font-size: 36px;
+                color: #555;
+            }
+            .sign {
+                width: 150px;
+                height: 46px;
+                font-size: 20px!important;
+                border-radius: 23px;
+                text-align: center;
+                line-height: 46px;
+                color: #fff!important;
+                background: #2c2c32;
+            }
+            .hasSigned {
+                width: 150px;
+                height: 46px;
+                font-size: 20px!important;
+                border-radius: 23px;
+                text-align: center;
+                line-height: 46px;
+                color: #cacaca!important;
+                border: 1px solid #cacaca;
+            }
+        }
+    }
+
+    .steamAlert{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 999;
+
+        .inner{
+            position: absolute;
+            width: 75%;
+            left: 50%;
+            right: 0;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background: #fff;
+            border-radius: 20px;
+            padding-bottom: 30px;
+
+            .close{
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                p{
+                    flex: 1;
+                    font-size: 28px;
+                    color: #2c2c32;
+                    padding: 20px 30px;
+                    box-sizing: border-box;
+                }
+
+                span{
+                    display: inline-block;
+                    padding: 20px 30px;
+                    font-size: 24px;
+                    color: #2c2c32;
+                    box-sizing: border-box;
+                }
+            }
+
+            .prodInfo{
+                width: 100%;
+                border-top: 1px solid #f1f1f1;
+                padding: 0 30px;
+                box-sizing: border-box;
+
+                div{
+                    margin-top: 20px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    label{
+                        flex: 1;
+                    }
+
+                    span:nth-child(2){
+                        font-size: 120px;
+                        color: #171A22;
+                    }
+
+                    span:nth-child(3){
+                        font-size: 80px;
+                        color: #333;
+                        margin: 0 20px 0 15px;
+                    }
+
+                    span:nth-child(4){
+                        font-size: 105px;
+                        color: #CB472F;
+                    }
+                }
+
+                p{
+                    text-align: center;
+                    box-sizing: border-box;
+                    font-size: 24px;
+                    color: #333;
+                    line-height: 40px;
+                }
+
+            }
+
+            .btnPart{
+                width: 100%;
+                margin-top: 30px;
+
+                span{
+                    margin: 0 auto;
+                    display: block;
+                    border: 1px solid #2c2c32;
+                    text-align: center;
+                    font-size: 28px;
+                    color: #2c2c32;
+                    line-height: 60px;
+                    height: 60px;
+                    border-radius: 30px;
+                    width: 300px;
+                }
+            }
+        }
+    }
+}

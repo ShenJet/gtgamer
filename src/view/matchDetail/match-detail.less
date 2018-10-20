@@ -1,0 +1,537 @@
+.wrap {
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    background-color: #f1f1f1;
+
+    :global{
+        .am-navbar {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 12vw;
+            width: 100%;
+            background-color: #2c2c32;
+            color: #fff;
+
+            .am-navbar-title {
+                font-size: 36px!important;
+            }
+
+            .am-icon {
+                fill: currentColor;
+                background-size: cover;
+                width: 8vw;
+                height: 8vw;
+            }
+        }
+
+        .am-tabs{
+            .am-tabs-tab-bar-wrap{
+                .am-tabs-default-bar{
+                    .am-tabs-default-bar-content{
+                        background: #fff!important;
+
+                        .am-tabs-default-bar-tab {
+                            font-size: 24px;
+                            height: 80px;
+                        }
+                    }
+                }
+            }
+
+            .am-tabs-content-wrap{
+                .am-tabs-pane-wrap {
+                    div{
+                        height: auto!important;
+                    }
+                }
+            }
+
+
+        }
+
+        .am-accordion{
+            width: 100%;
+            div{
+                border: none!important;
+            }
+            .am-accordion-item{
+
+                .am-accordion-header{
+                    height: 60px!important;
+                    padding: 0!important;
+                    
+                    .am-accordion-header{
+                        padding: 0;
+                        background-color: #fff!important;
+                        .arrow{
+                            display: none!important;
+                        }
+                    }     
+                    .am-accordion-header:after{
+                        background-color: #fff!important;
+                        height: 0;
+                    }   
+                }
+                .am-accordion-header:after{
+                    background-color: #fff!important;
+                    height: 0;
+                }
+                .am-accordion-content{
+                    .am-accordion-content-box{
+                        background-color: #fff!important;
+                    }
+                    .am-accordion-content-box:after{
+                        display: none!important;
+                    }
+                }
+            }
+            .am-accordion-item:after{
+                background-color: #fff!important;
+                height: 0;
+
+            }
+        }
+        .am-accordion.my-accordion::before{
+            height: 0;
+            display: none;
+        }
+        .userPart{
+            width: 100%;
+
+            .guess_list{
+                width: 100%;
+                padding-top: 6px;
+                .userImg{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                
+                    img{
+                        margin: 0 10px 0 30px;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 30px;
+                    }
+                
+                    span{
+                        font-weight: bold;
+                        color: #2c2c32;
+                        font-size: 24px;
+                        margin-left: 20px;
+                    }
+                    .userTdou{
+                        display: inline-block;
+                        flex: 0.95;
+                        text-align: right;
+                        color: orange;
+                    }
+                    .userTdou:after{
+                        content: '';
+                        display: inline-block;
+                        width:28px;
+                        height: 28px;
+                        background: url(/img/tdou2.png) no-repeat;
+                        background-size: 28px 28px;
+                        position: relative;
+                        top: 2px;
+                        margin-left: 3px;
+                    }
+                    div:nth-child(4){
+                        margin-left: 20px;
+                        width: 0; 
+                        height: 0; 
+                        border-top: 8px solid transparent; 
+                        border-right: 8px solid #2c2c32; 
+                        border-bottom: 8px solid transparent; 
+                    }
+                
+                    div:nth-child(5){
+                        height: 30px;
+                        line-height: 30px;
+                        padding: 0 5px;
+                        background: #2c2c32;
+                        color: #fff;
+                        font-size: 18px;
+                    }
+                }
+
+                .ornament_list{
+                    width: 100%;
+                    padding-left: 10%;
+                    box-sizing: border-box;
+                    font-size: 0;
+    
+                    img{
+                        display: inline-block;
+                        width: 12.5%;
+                        margin-right: 2.5%;
+                        margin-top: 6px;
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+            
+
+            .beans_list{
+                width: 100%;
+
+                .inner{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    height: 80px;
+                    padding-top: 6px;
+                    span{
+                        font-weight: bold;
+                        color: #2c2c32;
+                        font-size: 24px;
+                    }
+
+                    span:nth-child(1){
+                        margin-left: 30px;
+                    }
+
+                    img{
+                        margin: 0 30px;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 30px;
+                    }
+
+                    span:nth-child(3){
+                        flex: 1;
+                        // margin-left: 50px;
+                    }
+
+                    label{
+                        color: orange;
+                        font-size: 24px;
+                        margin-right: 30px;
+                        display: flex;
+                    }
+                    label:after{
+                        content: '';
+                        display: inline-block;
+                        width:28px;
+                        height: 28px;
+                        background: url(/img/tdou2.png) no-repeat;
+                        background-size: 28px 28px;
+                        position: relative;
+                        top: 2px;
+                        margin-left: 3px;
+                    }
+
+                }
+            }
+
+            .loadMore{
+                width: 100%;
+                padding: 30px 0;
+                text-align: center;
+                font-size: 20px;
+                color: #2c2c32;
+            }
+
+            .noRecords{
+                width: 100%;
+                height: 150px;
+                line-height: 150px;
+                font-size: 24px;
+                color: #2c2c32;
+                text-align: center;
+            }
+        }
+    }
+
+
+    
+    .detailCard {
+        background-color: #2c2c32;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+
+        .teamL,.teamR{
+            width: 210px;
+
+            img{
+                // width: 80px;
+                height: 66px;
+            }
+
+            p{
+                font-size: 24px;
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+
+        .des{
+            flex: 1;
+
+            p:first-child{
+                margin: 5px auto;
+                // width: 30vw;
+                height: 6vw;
+                line-height: 6vw;
+                border-radius: 3vw;
+                border: 1px solid #fff;
+                color: #fff;
+                font-size: 3vw;
+                
+            }
+
+            p:last-child{
+                margin-top: 12px;
+                color: #fff;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .rateDes{
+        background: #fff;
+        margin-top: 15px;
+        padding-bottom: 30px;
+
+        .sub-tips{
+            display: flex;
+            padding: 20px 0;
+            border-bottom: 1px solid #f1f1f1;
+
+            span{
+                margin-left: 20px;
+                display: inline-block;
+                width: 5px;
+                background: #2c2c32;
+            }
+
+            label{
+                margin-left: 10px;
+                font-size: 24px;
+                color: #2c2c32;
+            }
+            
+        }
+
+        .rateLine1{
+            width: 100%;
+            height: 30px;
+
+            div{
+                margin: 0 auto;
+                width: 1px;
+                height: 100%;
+                background: #f1f1f1;
+            }
+        }
+
+        .rateBox{
+            display: flex;
+            align-items: center;
+            color: #2c2c32;
+
+            span{
+                font-weight: bold;
+                font-size: 28px;
+                flex: 3;
+                display: inline-block;
+                text-align: center;
+            }
+
+            b{
+                font-size: 5vw;
+                flex: 1;
+                text-align: center;
+            }
+
+            label{
+                font-size: 20px;
+                flex: 1;
+                text-align: center;
+            }
+
+        }
+
+        .rateLine2{
+            width: 100%;
+            height: 50px;
+
+            div{
+                margin: 0 auto;
+                width: 1px;
+                height: 100%;
+                background: #f1f1f1;
+            }
+        }
+
+        .show-info{
+            width: 100%;
+            display: flex;
+            padding: 0 30px;
+            box-sizing: border-box;
+            margin-top: 5px;
+
+            span{
+                font-size: 30px;
+                font-weight: bold;
+                color: rgb(70,88,110);
+            }
+
+            label {
+                flex: 1;
+                text-align: center;
+                color: #2c2c32;
+                font-size: 20px;
+            }
+        }
+
+        .progress{
+            width: 100%;
+            display: flex;
+            padding: 0 30px;
+            box-sizing: border-box;
+            margin-top: 5px;
+
+            span{
+                height: 15px;
+                background: rgb(70,88,110);
+            }
+
+            label:nth-child(2){
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid rgb(70,88,110);
+                border-right: 15px solid transparent; 
+            }
+
+            label:nth-child(4){
+                width: 0; 
+                height: 0; 
+                border-bottom: 15px solid rgb(70,88,110);
+                border-left: 15px solid transparent; 
+            }
+        }
+
+        .forecast{
+            margin: 30px auto 0;
+            width: 250px;
+            height: 80px;
+            line-height: 80px;
+            color: #fff;
+            background: #f1f1f1;
+            border-radius: 40px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .forecastCanClick{
+            margin: 30px auto 0;
+            width: 250px;
+            height: 80px;
+            line-height: 80px;
+            color: #fff;
+            background: #2c2c32;
+            border-radius: 40px;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    .rankList{
+        background: #fff;
+        margin-top: 15px;
+        padding-bottom: 100px;
+    }
+
+    .guessPart{
+        width: 100%;
+        background: #fff;
+        margin-top: 15px;
+
+        .title{
+            display: flex;
+            padding: 20px 0;
+            border-bottom: 1px solid #f1f1f1;
+
+            span{
+                margin-left: 20px;
+                display: inline-block;
+                width: 5px;
+                background: #2c2c32;
+            }
+
+            label{
+                margin-left: 10px;
+                font-size: 24px;
+                color: #2c2c32;
+            }
+            
+        }
+
+        .guess-item{
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid #f1f1f1;
+            padding: 20px;
+            box-sizing: border-box;
+
+            p{
+                font-size: 2.8vw;
+                color: #2c2c32;
+
+                label{
+                    color: orange;
+                    margin-left: 20px;
+                    font-size: 3.0vw;
+                }
+            }
+
+            div{
+                margin-top: 10px;
+                width: 100%;
+                display: flex;
+                height: 30px;
+
+                span{
+                    padding: 0 5px;
+                    display: inline-block;
+                    height: 30px;
+                    line-height: 30px;
+                    background: #2c2c32;
+                    color: #fff;
+                    font-size: 20px;
+                }
+
+                i{
+                    flex: 1;
+                }
+
+                label{
+                    width: 120px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 20px;
+                    color: #aaa;
+                    border: 1px solid #ccc;
+                    text-align: center;
+                    border-radius: 15px;
+                    margin-left: 20px;
+                }
+            }
+
+        }
+
+        .guess-item:last-child{
+            border-bottom: none;
+        }
+    }
+}
+
+
